@@ -1,0 +1,46 @@
+{
+  "features": [
+    "frequency",
+    "angle_of_attack",
+    "chord_length",
+    "free_stream_velocity",
+    "suction_side_thickness"
+  ],
+  "target": "sound_pressure_level",
+  "metrics": {
+    "linear": {
+      "R2": 0.5582979754897286,
+      "RMSE": 4.704109194974887
+    },
+    "dt": {
+      "R2": 0.8852175895990135,
+      "RMSE": 2.398006575897805
+    },
+    "knn": {
+      "R2": 0.89309880378623,
+      "RMSE": 2.3142164796156286
+    }
+  },
+  "feature_ranges": {
+    "frequency": [
+      200.0,
+      20000.0
+    ],
+    "angle_of_attack": [
+      0.0,
+      22.2
+    ],
+    "chord_length": [
+      0.0254,
+      0.3048
+    ],
+    "free_stream_velocity": [
+      31.7,
+      71.3
+    ],
+    "suction_side_thickness": [
+      0.000400682,
+      0.0584113
+    ]
+  }
+}
